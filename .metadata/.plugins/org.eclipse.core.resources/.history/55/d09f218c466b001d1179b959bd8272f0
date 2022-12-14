@@ -1,0 +1,31 @@
+
+public class TesteFuncionario {
+
+	public static void main(String[] args) {
+		
+		Funcionario nick = new Funcionario();
+		
+		nick.setNome("Nick Castle");
+		nick.setCpf("111.111.111-11");
+		nick.setSalario(2200);
+		
+		System.out.println(nick.getNome());
+		System.out.println(nick.getBonificacao());
+		
+		FuncionarioGerente g1 = new FuncionarioGerente();
+		
+		g1.setNome("Bibia");
+		g1.setCpf("222.222.222-22");
+		g1.setSalario(2200);
+		g1.setSenha(12345);
+		
+		boolean autenticou = g1.autentica(1234);
+		
+		System.out.println(g1.getNome());
+		System.out.println(g1.getCpf());
+		System.out.println(g1.getSalario());
+		System.out.println(autenticou);
+		
+	}
+
+}
